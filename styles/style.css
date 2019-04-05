@@ -23,24 +23,70 @@ header{
 
 
 .title{
-    background-color: #e94756;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 2px;
-    display: flex;
-    justify-content: center;
 }
 
-.title::before {
+.title h1 {
+  position: relative;
+  background-color: #e94756;
+}
+
+.title h1::before {
   content: url("../img/baner_left.svg");
   display: block;
-  width: 100px;
+  width: 10%;
+  position: absolute;
+  left: -32px;
 }
 
-.title::after {
+.title h1::after {
   content: url("../img/baner_right.svg");
   display: block;
-  width: 100px;
+  width: 10%;
+  position: absolute;
+  right: -32px;
+  top: 0%;
+}
+
+.explications .title h1::before {
+  content: url("../img/baner_left.svg");
+  display: block;
+  width: 20%;
+  position: absolute;
+  left: -32px;
+}
+
+.explications .title h1::after {
+  content: url("../img/baner_right.svg");
+  display: block;
+  width: 20%;
+  position: absolute;
+  right: -32px;
+  top: 0%;
+}
+
+.title h2 {
+  position: relative;
+  background-color: #e94756;
+}
+
+.title h2::before {
+  content: url("../img/baner_left.svg");
+  display: block;
+  width: 15%;
+  position: absolute;
+  left: -25px;
+}
+
+.title h2::after {
+  content: url("../img/baner_right.svg");
+  display: block;
+  width: 15%;
+  position: absolute;
+  right: -25px;
+  top: 0%;
 }
 
 a {
@@ -120,6 +166,11 @@ img {
     background: #fcf18d;
     margin: 20px;
     text-align: center;
+}
+
+.cartouche .title {
+display: flex;
+justify-content: center;
 }
 
 .explications {
