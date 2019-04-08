@@ -18,10 +18,6 @@ header{
   justify-content: space-between;
 }
 
-
-
-
-
 .title{
     text-transform: uppercase;
     font-size: 13px;
@@ -48,6 +44,12 @@ header{
   position: absolute;
   right: -32px;
   top: 0%;
+}
+
+.explications{
+  position: absolute;
+  top: 70px;
+  left: 30px;
 }
 
 .explications .title h1::before {
@@ -97,7 +99,6 @@ text-decoration: none;
 }
 
 .rive1{
-  background-color: yellow;
   display: flex;
   flex-flow: row wrap;
   width: 25%;
@@ -105,25 +106,16 @@ text-decoration: none;
   justify-content: center;
 }
 .rive2{
-  background-color: blue;
   display: flex;
   flex-flow: row wrap;
   width: 25%;
   justify-content: center;
 }
 
-
-.torch img{
-width: 30%;
-margin-left: auto;
-margin-right: auto;
-}
-
 .personnage{
   width: 100px;
   height: 150px;
   margin: 20px;
-  background-color: white;
 }
 
 img {
@@ -246,16 +238,38 @@ flex-flow: row wrap;
 justify-content: center;
 }
 
+.game_over {
+width: 80%;
+position: absolute;
+top: 210px;
+left: 150px;
+z-index: 0;
+}
 
+.win {
+width: 70%;
+position: absolute;
+top: 50px;
+left: 200px;
+z-index: 0;
+}
 
+.bridge {
+width: 300px;
+height: 200px;
+position: absolute;
+left: 500px;
+top: 400px;
+z-index: -1;
+}
 
 .two_tree {
 width: 200px;
 height: 200px;
 position: absolute;
 left: 1000px;
-top: 300px;
-z-index: 1;
+top: 680px;
+z-index: -1;
 }
 
 
@@ -263,55 +277,49 @@ z-index: 1;
 width: 200px;
 height: 200px;
 position: absolute;
-left: 300px;
-top: 250px;
-z-index: 1;
+left: 100px;
+top: 680px;
+z-index: -1;
 }
 
-
-
-
+.plant_decor{
+position: absolute;
+width: 100%;
+left: 0px;
+top: 182px;
+z-index: -2;
+}
 
 .field{
 position: absolute;
 width: 100%;
 left: 0px;
-top: 200px;
+top: 350px;
 z-index: -3;
 }
 
-
-
-
-
 .stars {
 position: absolute;
-width: 100%;
+width: 90%;
 top:75px;
 left:75px;
 z-index:-4;
 }
 
-
-
-
-
 .river {
 width: 30%;
 position: absolute;
-top: 200px;
+top: 350px;
 left: 400px;
-z-index: 0;
+z-index: -2;
 margin-left: auto;
 margin-right: auto;
 }
-
-
 
 .cloud {
 width: 100%;
 position: absolute;
 left: 0px;
-top: 0px;
+top: 100px;
 z-index: -5;
 }
