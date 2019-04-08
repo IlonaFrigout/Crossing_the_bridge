@@ -167,7 +167,9 @@ justify-content: center;
 
 .explications {
   width: 300px;
-  padding : 22px 42px;
+  padding : 30px;
+  padding-top: 5px;
+
 }
 
 .informations {
@@ -205,6 +207,7 @@ top: 100px;
 .combinaisons {
   width: 500px;
   padding : 20px;
+  padding-top: 5px;
 }
 
 .align{
