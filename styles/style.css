@@ -262,6 +262,18 @@ z-index: 0;
   left: Opx;
 }
 
+@media screen and (min-width: 1500px) {
+  .rive1 {
+width: 10%;
+  }
+  .rive2 {
+width: 10%;
+  }
+  .combinaisons {
+    width: 1000px;
+  }
+}
+
 .bridge {
 width: 300px;
 height: 200px;
