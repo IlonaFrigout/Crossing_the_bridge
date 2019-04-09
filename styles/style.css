@@ -46,29 +46,6 @@ header{
   top: 0%;
 }
 
-.explications{
-  position: absolute;
-  top: 70px;
-  left: 30px;
-}
-
-.explications .title h1::before {
-  content: url("../img/baner_left.svg");
-  display: block;
-  width: 20%;
-  position: absolute;
-  left: -32px;
-}
-
-.explications .title h1::after {
-  content: url("../img/baner_right.svg");
-  display: block;
-  width: 20%;
-  position: absolute;
-  right: -32px;
-  top: 0%;
-}
-
 .title h2 {
   position: relative;
   background-color: #e94756;
@@ -124,24 +101,6 @@ img {
   display:block;
 }
 
-.commencer a:hover {
-  color : #fcc137;
-}
-
-.commencer a {
-  color : #fff;
-  font-size: 30px;
-  text-decoration: none;
-}
-
-.commencer{
-  background-color: #e94756;
-  border-radius: 30px;
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .button{
   display:block;
   border: #ffc029 6px solid;
@@ -163,13 +122,6 @@ img {
 .cartouche .title {
 display: flex;
 justify-content: center;
-}
-
-.explications {
-  width: 300px;
-  padding : 30px;
-  padding-top: 5px;
-
 }
 
 .informations {
