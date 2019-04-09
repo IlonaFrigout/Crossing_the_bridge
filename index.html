@@ -5,16 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Crossing the bridge</title>
 		<link rel="stylesheet" href="styles/style.css">
-
+		<link rel="stylesheet" href="styles/tingle.css" media="all">
 	</head>
 
 	<body>
 
 <header>
-		<div class="informations button">
+		<div class="informations button btn btn--primary btn-demo js-tingle-modal-1">
 			<a href="#">i</a>
-
-
 		</div>
 
 		<div class="title">
@@ -29,7 +27,7 @@
 
 </header>
 
-<div class="explications cartouche" id="showDiv">
+<div class="tingle-demo tingle-demo-tiny">
 	<div class="title">
 		<h1>The Rules</h1>
 	</div>
@@ -37,9 +35,6 @@
 		<P>They have one torch and, because it’s night, the torch has to be used when crossing the bridge. The torch only lasts 15 minutes before going out.		</p>
 		<P>The archer can cross the bridge in 1 minute, the knight in 2 minutes, the ogre in 5 minutes, and the king in 8 minutes.		</p>
 		<P>When people cross the bridge together, they must move at the lower person’s pace. The question is, can they all get across the bridge in 15 minutes or less ?</p>
-	<div class="commencer">
-	   <a href="start.html">Start</a>
-	</div>
 </div>
 
 
@@ -178,6 +173,25 @@
 <div class="fond">
 	<img src="img/fond.svg" />
 </div>
+
+<!-- Ici l'appel vers le javascript de la modale. Attention à tout mettre dans les bon dossier avec les bons chemins -->
+<script src="js/tingle.js"></script>
+
+
+<!-- Ici l'initialisation de la modale. -->
+<script type="text/javascript">
+
+/**
+* Modal Tiny no footer
+*/
+
+var fenetreModale = new tingle.modal();
+var btn = document.querySelector('.js-tingle-modal-1');
+btn.addEventListener('click', function(){
+    fenetreModale.open();
+});
+fenetreModale.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
+</script>
 
 	</body>
 </html>
