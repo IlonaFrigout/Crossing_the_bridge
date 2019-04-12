@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Crossing the bridge</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/tingle.css" media="all">
+	</head>
+
+	<body>
+
+<header>
+		<div class="informations button btn btn--primary btn-demo js-tingle-modal-1">
+			<a href="#">i</a>
+		</div>
+
+		<div class="title">
+			<h1>Crossing the bridge</h1>
+		</div>
+
+	<div class="recommencer button">
+		<a href="index.html">
+			<img src="img/restart.svg" alt="restart" />
+		</a>
+	</div>
+
+</header>
+
+<div class="tingle-demo tingle-demo-tiny">
+	<div class="title">
+		<h1>The Rules</h1>
+	</div>
+		<P> Four people come to a river in the night. There is a narrow bridge, but it can only hold two people at a time.</p>
+		<P>They have one torch and, because it’s night, the torch has to be used when crossing the bridge. The torch only lasts 15 minutes before going out.		</p>
+		<P>The archer can cross the bridge in 1 minute, the knight in 2 minutes, the ogre in 5 minutes, and the king in 8 minutes.		</p>
+		<P>When people cross the bridge together, they must move at the lower person’s pace. The question is, can they all get across the bridge in 15 minutes or less ?</p>
+</div>
+
+
+<div class="align">
+	<div class="chrono">
+		<h2>19</h2>
+	</div>
+</div>
+
+<a href="index.html">
+<div class="game_over">
+	<img src="img/game_over.svg" />
+</div>
+</a>
+
+<div class=" align">
+	<div class=" personnage">
+
+	</div>
+</div>
+
+
+<div class="rive1">
+
+	<div class="A personnage">
+
+	</div>
+
+
+	<div class="B personnage">
+		
+	</div>
+
+	<div class="D personnage">
+		
+	</div>
+
+
+	<div class="C personnage">
+
+	</div>
+
+</div>
+
+<div class="rive2">
+
+	<div class="A personnage">
+		<img src="img/A.svg" />
+	</div>
+	<div class="B personnage">
+<img src="img/B.svg" />
+	</div>
+	<div class="D personnage">
+	<img src="img/D.svg" />
+</div>
+	<div class="C personnage">
+		<img src="img/C.svg" />
+	</div>
+
+</div>
+
+<div class="align">
+	<div class="combinaisons cartouche">
+
+		<div class="title">
+			<h2>combinations</h2>
+		</div>
+
+<div class="box">
+
+		<a href="#">
+			<div class="section">
+
+					<div class="tete1">
+						
+					</div>
+
+					<div class="tete1">
+						
+					</div>
+
+			</div>
+		</a>
+
+
+</div>
+
+</div>
+</div>
+
+<div class="fond">
+	<img src="img/fond.svg" />
+</div>
+
+<!-- Ici l'appel vers le javascript de la modale. Attention à tout mettre dans les bon dossier avec les bons chemins -->
+<script src="js/tingle.js"></script>
+
+
+<!-- Ici l'initialisation de la modale. -->
+<script type="text/javascript">
+
+/**
+* Modal Tiny no footer
+*/
+
+var fenetreModale = new tingle.modal();
+var btn = document.querySelector('.js-tingle-modal-1');
+btn.addEventListener('click', function(){
+    fenetreModale.open();
+});
+fenetreModale.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
+</script>
+
+	</body>
+</html>
